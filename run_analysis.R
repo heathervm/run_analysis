@@ -1,8 +1,8 @@
 run_analysis <- function(){  
   require(dplyr)
-  traindata <- read.table("/Users/heathermurray/Downloads/UCI HAR Dataset/train/X_train.txt")
-  testdata <- read.table("/Users/heathermurray/Downloads/UCI HAR Dataset/test/X_test.txt")
-  newnames <- readLines("/Users/heathermurray/UCI HAR Dataset/features.txt")
+  traindata <- read.table("./UCI HAR Dataset/train/X_train.txt")
+  testdata <- read.table("./UCI HAR Dataset/test/X_test.txt")
+  newnames <- readLines("./UCI HAR Dataset/features.txt")
   variables <- c(newnames)
   colnames(traindata) <- variables
   colnames(testdata) <- variables
